@@ -16,10 +16,10 @@ group 'org.grails.profiles'
 version 3.1.10.BUILD-SNAPSHOT
 
 grailsPublish {
-	userOrg = 'grails'  
-	githubSlug = 'grails-profiles/base'
-	license = 'Apache-2.0'
-	title = "Grails Base Profile"
-	desc = "A profile for other profiles to extend from"
-	developers = [graemerocher:'Graeme Rocher']
+    userOrg = 'grails'  
+    githubSlug = 'grails-profiles/base'
+    license = 'Apache-2.0'
+    title = "Grails Base Profile"
+    desc = "A profile for other profiles to extend from"
+    developers = [graemerocher:'Graeme Rocher']
 }
