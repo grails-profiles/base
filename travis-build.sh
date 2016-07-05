@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-cd profiles
 ./gradlew clean 
 EXIT_STATUS=0
 echo "Publishing archives for branch $TRAVIS_BRANCH"
