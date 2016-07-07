@@ -2,3 +2,5 @@ description: Adds GORM for MongoDB to the project
 dependencies:
     compile:
         - org.grails.plugins:mongodb
+    provided:
+        - org.grails.plugins:embedded-mongodb:1.0.0
