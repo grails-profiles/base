@@ -1,5 +1,6 @@
 description: The base profile extended by other profiles
 repositories:
+    - "mavenLocal()"
     - "https://repo.grails.org/grails/core"
 build:
     repositories:

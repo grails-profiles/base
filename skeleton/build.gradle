@@ -1,6 +1,5 @@
 buildscript {
     repositories {
-        mavenLocal()
 @buildRepositories@
     }
     dependencies {
@@ -14,7 +13,6 @@ group "@grails.app.group@"
 @buildPlugins@
 
 repositories {
-    mavenLocal()
 @repositories@
 }
 
