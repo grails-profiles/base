@@ -26,7 +26,3 @@ dependencyManagement {
 dependencies {
 @dependencies@
 }
-
-task wrapper(type: Wrapper) {
-    gradleVersion = gradleWrapperVersion
-}
