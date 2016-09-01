@@ -1,10 +1,10 @@
 description: Adds GORM for Hibernate 5 to the project
 dependencies:
     build:
-        - 'org.grails.plugins:hibernate5:6.0.0.M2'
+        - 'org.grails.plugins:hibernate5:6.0.0.RC1'
     compile:
         - "org.grails.plugins:hibernate5"
-        - "org.hibernate:hibernate-core:5.1.0.Final"
-        - "org.hibernate:hibernate-ehcache:5.1.0.Final"
+        - "org.hibernate:hibernate-core:5.1.1.Final"
+        - "org.hibernate:hibernate-ehcache:5.1.1.Final"
     runtime:
         - "com.h2database:h2"
