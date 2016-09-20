@@ -4,7 +4,7 @@ repositories:
     - "https://repo.grails.org/grails/core"
 build:
     repositories:
-	    - "mavenLocal()"
+        - "mavenLocal()"
         - "https://repo.grails.org/grails/core"
     plugins:
         - eclipse
