@@ -21,9 +21,5 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
     root(ERROR, ['STDOUT', 'FULL_STACKTRACE'])
 }
 else {
-    root(ERROR, ['STDOUT'])    
+    root(ERROR, ['STDOUT'])
 }
-
-
-
-
