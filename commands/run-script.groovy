@@ -4,7 +4,7 @@ description("Executes Groovy scripts in a Grails context") {
 }
 try {
 
-    def arguments = ["-Pargs=\"${commandLine.remainingArgs.join(' ')}\""]
+    def arguments = ["-Pargs=${commandLine.remainingArgs.join(' ')}"]
     commandLine.systemProperties.each { key, value ->
         arguments << "-D${key}=$value".toString()
     }
