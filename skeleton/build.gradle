@@ -26,3 +26,7 @@ dependencyManagement {
 dependencies {
 @dependencies@
 }
+
+bootRun {
+    jvmArgs = ['-Dspring.output.ansi.enabled=always']
+}
