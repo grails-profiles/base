@@ -4,6 +4,6 @@ build:
         - org.grails.plugins.views-markup
 dependencies:
     build:
-        - "org.grails.plugins:views-gradle:1.1.2"
+        - "org.grails.plugins:views-gradle:1.1.5"
     compile:
         - "org.grails.plugins:views-markup"
