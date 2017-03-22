@@ -11,6 +11,8 @@ if(!commandLine.isEnvironmentSet()) {
     System.setProperty('grails.env', commandLine.environment)
 }
 
+grails.util.Environment.reset()
+
 def arguments = []
 commandLine.systemProperties.each { key, value ->
     arguments << "-D${key}=$value".toString()
