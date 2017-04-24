@@ -5,6 +5,6 @@ dependencies:
     compile:
         - "org.grails.plugins:hibernate4"
         - "org.hibernate:hibernate-core:4.3.11.Final"
-        - "org.hibernate:hibernate-ehcache:4.3.11.Final"
     runtime:
         - "com.h2database:h2"
+        - "org.apache.tomcat:tomcat-jdbc"

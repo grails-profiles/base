@@ -4,7 +4,7 @@ dependencies:
         - 'org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}'
     compile:
         - "org.grails.plugins:hibernate5"
-        - "org.hibernate:hibernate-core:5.1.3.Final"
-        - "org.hibernate:hibernate-ehcache:5.1.3.Final"
+        - "org.hibernate:hibernate-core:5.1.5.Final"
     runtime:
         - "com.h2database:h2"
+        - "org.apache.tomcat:tomcat-jdbc"
