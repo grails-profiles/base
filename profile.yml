@@ -20,5 +20,7 @@ dependencies:
         - "org.springframework.boot:spring-boot-starter-logging"
         - "org.springframework.boot:spring-boot-autoconfigure"
         - "org.grails:grails-core"
+    testCompile:
+        - "org.grails:grails-gorm-testing-support"
     console:
         - "org.grails:grails-console"
