@@ -1,0 +1,8 @@
+description: Adds support for GSP to the project
+build:
+    plugins:
+        - org.grails.grails-gsp
+dependencies:
+    compile:
+        - "org.grails.plugins:gsp"
+        
