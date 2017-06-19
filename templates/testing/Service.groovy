@@ -1,12 +1,8 @@
 @artifact.package@
-import grails.test.mixin.TestFor
+import grails.testing.services.ServiceUnitTest
 import spock.lang.Specification
 
-/**
- * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
- */
-@TestFor(@artifact.name@Service)
-class @artifact.name@ServiceSpec extends Specification {
+class @artifact.name@ServiceSpec extends Specification implements ServiceUnitTest<@artifact.name@Service>{
 
     def setup() {
     }
