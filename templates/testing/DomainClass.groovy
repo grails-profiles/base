@@ -2,7 +2,7 @@
 import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
-class @artifact.name@Spec extends Specification implements DomainUnitTest<@artifact.name@>{
+class @artifact.name@Spec extends Specification implements DomainUnitTest<@artifact.name@> {
 
     def setup() {
     }
