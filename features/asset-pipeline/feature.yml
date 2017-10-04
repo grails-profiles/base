@@ -1,9 +1,9 @@
 description: Adds Asset Pipeline to a Grails project
 build:
     plugins:
-        - asset-pipeline
+        - com.bertramlabs.asset-pipeline
 dependencies:
     build:
-        - 'com.bertramlabs.plugins:asset-pipeline-gradle:2.14.2'
+        - 'com.bertramlabs.plugins:asset-pipeline-gradle:2.14.3'
     runtime:
-        - "com.bertramlabs.plugins:asset-pipeline-grails:2.14.2"
+        - "com.bertramlabs.plugins:asset-pipeline-grails:2.14.3"
