@@ -4,8 +4,8 @@ build:
         - asset-pipeline
 dependencies:
     build:
-        - "com.bertramlabs.plugins:asset-pipeline-gradle:2.14.2"
+        - "com.bertramlabs.plugins:asset-pipeline-gradle:2.14.6"
     runtime:
-        - "com.bertramlabs.plugins:asset-pipeline-grails:2.14.2"
+        - "com.bertramlabs.plugins:asset-pipeline-grails:2.14.6"
     assets:
-        - "com.bertramlabs.plugins:less-asset-pipeline:2.14.2"
+        - "com.bertramlabs.plugins:less-asset-pipeline:2.14.6"
