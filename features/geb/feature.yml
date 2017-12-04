@@ -5,7 +5,7 @@ build:
         - com.energizedwork.idea-project-components
 dependencies:
     build:
-        - gradle.plugin.com.energizedwork.webdriver-binaries:webdriver-binaries-gradle-plugin:1.1
+        - gradle.plugin.com.energizedwork.webdriver-binaries:webdriver-binaries-gradle-plugin:1.2
         - gradle.plugin.com.energizedwork:idea-gradle-plugins:1.4
     testCompile:
         - org.grails.plugins:geb
