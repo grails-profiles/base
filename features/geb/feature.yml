@@ -1,16 +1,8 @@
-description: Adds Geb and webdriver dependencies to run functional tests
-build:
-    plugins:
-        - com.energizedwork.webdriver-binaries
-        - com.energizedwork.idea-project-components
+description: Adds Geb 1.1.1 and WebDriver 2.47.1 to run functional tests
 dependencies:
-    build:
-        - gradle.plugin.com.energizedwork.webdriver-binaries:webdriver-binaries-gradle-plugin:1.2
-        - gradle.plugin.com.energizedwork:idea-gradle-plugins:1.4
     testCompile:
-        - org.grails.plugins:geb
-        - org.seleniumhq.selenium:selenium-remote-driver:3.6.0
-        - org.seleniumhq.selenium:selenium-api:3.6.0        
+        - org.grails.plugins:geb:1.1.2
     testRuntime:    
-        - org.seleniumhq.selenium:selenium-chrome-driver:3.6.0
-        - org.seleniumhq.selenium:selenium-firefox-driver:3.6.0
+        - org.seleniumhq.selenium:selenium-chrome-driver:2.47.1
+        - org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1
+        - net.sourceforge.htmlunit:htmlunit:2.18
