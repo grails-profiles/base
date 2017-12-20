@@ -1,5 +1,5 @@
 webdriverBinaries {
-    chromedriver '2.32'
+    chromedriver '2.34'
     geckodriver '0.18.0'
 }
 
