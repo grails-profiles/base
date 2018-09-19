@@ -4,7 +4,7 @@ dependencies:
         - 'org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}'
     compile:
         - "org.grails.plugins:hibernate5"
-        - "org.hibernate:hibernate-core:5.1.15.Final"
+        - "org.hibernate:hibernate-core:5.1.16.Final"
     runtime:
         - 'org.glassfish.web:el-impl:2.1.2-b03'
         - "com.h2database:h2"
