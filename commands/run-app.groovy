@@ -90,6 +90,7 @@ try {
                 break
             }
         }
+        sleep(100);
     }
 
     if(!org.grails.cli.GrailsCli.isInteractiveModeActive()) {
