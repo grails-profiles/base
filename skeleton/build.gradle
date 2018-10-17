@@ -16,7 +16,15 @@ repositories {
 @repositories@
 }
 
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
 dependencies {
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
 @dependencies@
 }
 
