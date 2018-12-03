@@ -1,8 +1,0 @@
-description: Adds Geb 1.1.1 and WebDriver 2.47.1 to run functional tests
-dependencies:
-    testCompile:
-        - org.grails.plugins:geb:1.1.2
-    testRuntime:    
-        - org.seleniumhq.selenium:selenium-chrome-driver:2.47.1
-        - org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1
-        - net.sourceforge.htmlunit:htmlunit:2.18
