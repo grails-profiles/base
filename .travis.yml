@@ -5,7 +5,7 @@ jdk:
 before_script:
 - rm -rf target
 script: "./travis-build.sh"
-install: false
+install: "/bin/true"
 env:
   global:
   - GIT_NAME="Graeme Rocher"
