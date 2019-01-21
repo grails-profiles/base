@@ -14,6 +14,18 @@ group "@grails.app.group@"
 
 repositories {
 @repositories@
+    maven {
+        url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
+        content {
+            includeVersionByRegex('org\\.grails\\.plugins', '.*', '.*BUILD-SNAPSHOT')
+        }
+    }
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+        content {
+            includeVersionByRegex('io\\.micronaut.*', '.*', '.*BUILD-SNAPSHOT')
+        }
+    }
 }
 
 configurations {
@@ -29,7 +41,11 @@ dependencies {
 }
 
 bootRun {
-    jvmArgs('-Dspring.output.ansi.enabled=always')
+    jvmArgs(
+        '-Dspring.output.ansi.enabled=always', 
+        '-noverify', 
+        '-XX:TieredStopAtLevel=1',
+        '-Xmx1024m')
     sourceResources sourceSets.main
     String springProfilesActive = 'spring.profiles.active'
     systemProperty springProfilesActive, System.getProperty(springProfilesActive)
