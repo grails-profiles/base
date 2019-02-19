@@ -14,18 +14,6 @@ group "@grails.app.group@"
 
 repositories {
 @repositories@
-    maven {
-        url "https://oss.jfrog.org/artifactory/oss-snapshot-local"
-        content {
-            includeVersionByRegex('org\\.grails\\.plugins', '.*', '.*BUILD-SNAPSHOT')
-        }
-    }
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
-        content {
-            includeVersionByRegex('io\\.micronaut.*', '.*', '.*BUILD-SNAPSHOT')
-        }
-    }
 }
 
 configurations {
