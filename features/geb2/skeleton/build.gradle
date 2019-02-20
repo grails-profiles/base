@@ -1,6 +1,6 @@
 webdriverBinaries {
-    geckodriver '0.23.0'
     chromedriver '2.46'
+    geckodriver '0.24.0'
 }
 
 tasks.withType(Test) {
