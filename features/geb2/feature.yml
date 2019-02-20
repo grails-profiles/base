@@ -1,10 +1,10 @@
 description: Adds Geb 2, WebDriver 3.x and Webdriver binaries Gradle Plugin dependencies to run functional tests.
 build:
     plugins:
-        - com.energizedwork.webdriver-binaries
+        - com.github.erdi.webdriver-binaries
 dependencies:
     build:
-        - gradle.plugin.com.energizedwork.webdriver-binaries:webdriver-binaries-gradle-plugin:1.4
+        - gradle.plugin.com.github.erdi.webdriver-binaries:webdriver-binaries-gradle-plugin:2.0
     testCompile:
         - org.grails.plugins:geb
         - org.seleniumhq.selenium:selenium-remote-driver:3.14.0
