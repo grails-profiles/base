@@ -16,6 +16,8 @@ build:
 dependencies:
     build:
         - "org.grails:grails-gradle-plugin:$grailsVersion"
+    compileOnly:
+        - "io.micronaut:micronaut-inject-groovy"
     compile:
         - "org.springframework.boot:spring-boot-starter-logging"
         - "org.springframework.boot:spring-boot-autoconfigure"
