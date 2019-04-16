@@ -25,6 +25,5 @@ dependencies:
     testCompile:
         - "org.grails:grails-gorm-testing-support"
         - "org.mockito:mockito-core"
-
     console:
         - "org.grails:grails-console"
