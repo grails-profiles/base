@@ -24,7 +24,7 @@ try {
         arguments << '--quiet'
     }
 
-    arguments << '-Dgrails.endpoints.shutdown.enabled=true'
+    arguments << '-Dgrails.management.endpoints.shutdown.enabled=true'
 
     arguments.addAll commandLine.remainingArgs
 
