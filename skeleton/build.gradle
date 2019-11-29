@@ -29,6 +29,7 @@ dependencies {
 }
 
 bootRun {
+    ignoreExitValue true
     jvmArgs(
         '-Dspring.output.ansi.enabled=always', 
         '-noverify', 
