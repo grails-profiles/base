@@ -21,6 +21,7 @@ dependencies:
         - "org.springframework.boot:spring-boot-autoconfigure"
         - "org.grails:grails-core"
     testCompile:
+        - "io.micronaut:micronaut-inject-groovy"
         - "org.grails:grails-gorm-testing-support"
         - "org.mockito:mockito-core"
     console:
