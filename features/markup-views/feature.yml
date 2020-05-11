@@ -3,7 +3,7 @@ build:
     plugins:
         - org.grails.plugins.views-markup
 dependencies:
-    build:
-        - "org.grails.plugins:views-gradle:2.0.0.BUILD-SNAPSHOT"
-    compile:
-        - "org.grails.plugins:views-markup"
+    - scope: build
+      coords: "org.grails.plugins:views-gradle:2.0.0.BUILD-SNAPSHOT"
+    - scope: compile
+      coords: "org.grails.plugins:views-markup"

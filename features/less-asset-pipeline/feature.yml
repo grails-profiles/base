@@ -3,9 +3,9 @@ build:
     plugins:
         - asset-pipeline
 dependencies:
-    build:
-        - "com.bertramlabs.plugins:asset-pipeline-gradle:3.0.7"
-    runtime:
-        - "com.bertramlabs.plugins:asset-pipeline-grails:3.0.7"
-    assets:
-        - "com.bertramlabs.plugins:less-asset-pipeline:3.0.7"
+    - scope: build
+      coords: "com.bertramlabs.plugins:asset-pipeline-gradle:3.0.7"
+    - scope: runtime
+      coords: "com.bertramlabs.plugins:asset-pipeline-grails:3.0.7"
+    - scope: assets
+      coords: "com.bertramlabs.plugins:less-asset-pipeline:3.0.7"

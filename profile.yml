@@ -12,17 +12,21 @@ build:
         - idea
         - org.grails.grails-core
 dependencies:
-    build:
-        - "org.grails:grails-gradle-plugin:$grailsVersion"
-    compileOnly:
-        - "io.micronaut:micronaut-inject-groovy"
-    compile:
-        - "org.springframework.boot:spring-boot-starter-logging"
-        - "org.springframework.boot:spring-boot-autoconfigure"
-        - "org.grails:grails-core"
-    testCompile:
-        - "io.micronaut:micronaut-inject-groovy"
-        - "org.grails:grails-gorm-testing-support"
-        - "org.mockito:mockito-core"
-    console:
-        - "org.grails:grails-console"
+    - scope: build
+      coords: "org.grails:grails-gradle-plugin:$grailsVersion"
+    - scope: compileOnly
+      coords: "io.micronaut:micronaut-inject-groovy"
+    - scope: compile
+      coords: "org.springframework.boot:spring-boot-starter-logging"
+    - scope: compile
+      coords: "org.springframework.boot:spring-boot-autoconfigure"
+    - scope: compile
+      coords: "org.grails:grails-core"
+    - scope: testCompile
+      coords: "io.micronaut:micronaut-inject-groovy"
+    - scope: testCompile
+      coords: "org.grails:grails-gorm-testing-support"
+    - scope: testCompile
+      coords: "org.mockito:mockito-core"
+    - scope: console
+      coords: "org.grails:grails-console"
