@@ -5,7 +5,7 @@ dependencies:
     - scope: compile
       coords: "org.grails.plugins:hibernate5"
     - scope: compile
-      coords: "org.hibernate:hibernate-core:5.4.0.Final"
+      coords: "org.hibernate:hibernate-core:5.4.18.Final"
     - scope: runtime
       coords: 'org.glassfish.web:el-impl:2.1.2-b03'
     - scope: runtime
@@ -13,4 +13,4 @@ dependencies:
     - scope: runtime
       coords: "org.apache.tomcat:tomcat-jdbc"
     - scope: runtime
-      coords: 'javax.xml.bind:jaxb-api:2.3.0'
+      coords: 'javax.xml.bind:jaxb-api:2.3.1'
