@@ -45,3 +45,7 @@ tasks.withType(GroovyCompile) {
         forkOptions.jvmArgs = ['-Xmx1024m']
     }
 }
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}
