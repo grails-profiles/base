@@ -3,4 +3,4 @@ dependencies:
     - scope: compile
       coords: 'org.grails.plugins:mongodb'
     - scope: provided
-      coords: 'org.grails.plugins:embedded-mongodb:1.0.2'
+      coords: 'org.grails.plugins:embedded-mongodb:2.0.0.M1'
