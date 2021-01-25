@@ -19,6 +19,8 @@ dependencies:
     - scope: compile
       coords: "org.springframework.boot:spring-boot-starter-logging"
     - scope: compile
+      coords: "org.springframework.boot:spring-boot-starter-validation"
+    - scope: compile
       coords: "org.springframework.boot:spring-boot-autoconfigure"
     - scope: compile
       coords: "org.grails:grails-core"
