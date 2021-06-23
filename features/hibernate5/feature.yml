@@ -1,7 +1,7 @@
 description: Adds GORM for Hibernate 5 to the project
 dependencies:
     build:
-        - 'org.grails.plugins:hibernate5:7.0.4'
+        - 'org.grails.plugins:hibernate5:7.0.5'
     compile:
         - 'org.grails.plugins:hibernate5'
         - 'org.hibernate:hibernate-core:5.4.18.Final'
