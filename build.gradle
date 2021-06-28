@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        mavenCentral()
         maven { url "https://repo.grails.org/grails/core" }
     }
     dependencies {
@@ -10,7 +11,6 @@ buildscript {
 apply plugin: "idea"
 apply plugin: "org.grails.grails-profile"
 apply plugin: "org.grails.internal.grails-profile-publish"
-
 
 group 'org.grails.profiles'
 version project.projectVersion
