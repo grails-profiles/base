@@ -7,7 +7,7 @@ dependencies:
     - scope: compile
       coords: "org.hibernate:hibernate-core:5.4.18.Final"
     - scope: runtime
-      coords: 'org.glassfish.web:el-impl:2.1.2-b03'
+      coords: 'org.glassfish.web:el-impl:2.2.1-b05'
     - scope: runtime
       coords: "com.h2database:h2:1.4.200"
     - scope: runtime
