@@ -13,7 +13,7 @@ build:
         - org.grails.grails-core
 dependencies:
     - scope: build
-      coords: "org.grails:grails-gradle-plugin:$grailsVersion"
+      coords: "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
     - scope: compileOnly
       coords: "io.micronaut:micronaut-inject-groovy"
     - scope: compile
