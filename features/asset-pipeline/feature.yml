@@ -4,6 +4,6 @@ build:
         - com.bertramlabs.asset-pipeline
 dependencies:
     - scope: build
-      coords: 'com.bertramlabs.plugins:asset-pipeline-gradle:3.3.3'
+      coords: 'com.bertramlabs.plugins:asset-pipeline-gradle:3.3.4'
     - scope: runtime
-      coords: "com.bertramlabs.plugins:asset-pipeline-grails:3.3.3"
+      coords: "com.bertramlabs.plugins:asset-pipeline-grails:3.3.4"
