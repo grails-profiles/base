@@ -1,7 +1,0 @@
-configurations.all {
-    resolutionStrategy.eachDependency  { DependencyResolveDetails details ->
-        if (details.requested.group == 'org.mongodb' ) {
-            details.useVersion(mongodbJavaDriverVersion)
-        }
-    }
-}
