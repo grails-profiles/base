@@ -1,7 +1,7 @@
 description: Adds GORM for Hibernate 5 to the project
 dependencies:
     - scope: build
-      coords: 'org.grails.plugins:hibernate5:7.1.0.RC3'
+      coords: 'org.grails.plugins:hibernate5:7.1.0-RC4'
     - scope: compile
       coords: "org.grails.plugins:hibernate5"
     - scope: compile
