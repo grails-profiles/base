@@ -8,12 +8,12 @@ dependencies:
     - scope: testCompile
       coords: org.grails.plugins:geb
     - scope: testCompile
-      coords: org.seleniumhq.selenium:selenium-remote-driver:3.141.59
+      coords: org.seleniumhq.selenium:selenium-remote-driver:4.0.0
     - scope: testCompile
-      coords: org.seleniumhq.selenium:selenium-api:3.141.59
+      coords: org.seleniumhq.selenium:selenium-api:4.0.0
     - scope: testCompile
-      coords: org.seleniumhq.selenium:selenium-support:3.141.59
+      coords: org.seleniumhq.selenium:selenium-support:4.0.0
     - scope: testRuntime
-      coords: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59
+      coords: org.seleniumhq.selenium:selenium-chrome-driver:4.0.0
     - scope: testRuntime
-      coords: org.seleniumhq.selenium:selenium-firefox-driver:3.141.59
+      coords: org.seleniumhq.selenium:selenium-firefox-driver:4.0.0
