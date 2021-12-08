@@ -16,6 +16,7 @@ spring:
     jmx:
         unique-names: true
     main:
+        allow-circular-references: true
         banner-mode: "off"
     groovy:
         template:
