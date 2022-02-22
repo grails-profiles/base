@@ -1,5 +1,3 @@
-
-
 description("Runs a Grails application") {
     usage "grails run-app"
     synonyms 'run'
@@ -36,7 +34,7 @@ try {
     }
 
     arguments << "-Dgrails.run.active=true"
-    
+
     if(port) {
         arguments << "-Dgrails.server.port=$port"
     }
@@ -75,29 +73,35 @@ try {
     }
 
     console.updateStatus "Running application..."
-    def future
-    if(flag('debug-jvm')) {
-        future = gradle.async."bootRun --debug-jvm"(*arguments)
-    }
-    else {
-        future = gradle.async."bootRun"(*arguments)
-    }
-
-    while(!isServerAvailable(host ?: "localhost", port ?: 8080)) {
-        if(future.done) {
-            // the server exited for some reason, so break
-            if(future.get() instanceof Throwable) {
-                break
-            }
-        }
-        sleep(100);
-    }
 
     if(!org.grails.cli.GrailsCli.isInteractiveModeActive()) {
-        // if interactive mode is not active, then block and don't exit
-        return future.get()
+        if(flag('debug-jvm')) {
+            gradle."bootRun --debug-jvm"(*arguments)
+        }
+        else {
+            gradle."bootRun"(*arguments)
+        }
     }
     else {
+        def future
+        if(flag('debug-jvm')) {
+            future = gradle.async."bootRun --debug-jvm"(*arguments)
+        }
+        else {
+            future = gradle.async."bootRun"(*arguments)
+        }
+
+        while(!isServerAvailable(host ?: "localhost", port ?: 8080)) {
+            console.indicateProgress()
+            if(future.done) {
+                // the server exited for some reason, so break
+                if(future.get() instanceof Throwable) {
+                    break
+                }
+            }
+            sleep(100);
+        }
+
         System.setProperty("run-app.running", "true")
         if(!Boolean.getBoolean("run-app.shutdown.hook.registered")) {
             System.setProperty("run-app.shutdown.hook.registered", "true")
@@ -108,9 +112,9 @@ try {
                     }
                     catch(e) {
                         // ignore
-                    }                    
-                }                
-            }            
+                    }
+                }
+            }
             isShutdownHookRegistered = true
         }
 
