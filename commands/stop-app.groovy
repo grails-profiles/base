@@ -74,9 +74,10 @@ if(addresses) {
 
 Integer port = flag('port')?.toInteger() ?: config.getProperty('server.port', Integer) ?: 8080
 String host = flag('host') ?: config.getProperty('server.address', String) ?: "localhost"
-String path = config.getProperty('server.context-path') ?: config.getProperty('server.contextPath') ?: ""
+String contextPath = config.getProperty('server.context-path') ?: config.getProperty('server.contextPath') ?: ""
+String managementPath = config.getProperty('management.endpoints.web.base-path') ?: config.getProperty('management.endpoints.web.basePath') ?: "/actuator"
 console.updateStatus "Shutting down application..."
-def url = new URL("http://$host:${port}${path}/shutdown")
+def url = new URL("http://$host:${port}${contextPath}${managementPath}/shutdown")
 try {
 	def connection = url.openConnection()
 	connection.setRequestMethod("POST")
@@ -91,7 +92,7 @@ try {
 	
 }
 catch (e) {
-	console.error "Application not running."		
+	console.error "Application not running.", e
 	return false
 }
 	
