@@ -4,7 +4,7 @@ build:
         - org.grails.plugins.views-json
 dependencies:
     - scope: build
-      coords: "org.grails.plugins:views-gradle:2.2.0"
+      coords: "org.grails.plugins:views-gradle:2.2.1"
     - scope: compile
       coords: "org.grails.plugins:views-json"
     - scope: compile
