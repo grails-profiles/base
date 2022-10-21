@@ -2,5 +2,5 @@ description: Adds GORM for MongoDB to the project
 dependencies:
     - scope: compile
       coords: 'org.grails.plugins:mongodb'
-    - scope: provided
+    - scope: compileOnly
       coords: 'org.grails.plugins:embedded-mongodb:2.0.1'
