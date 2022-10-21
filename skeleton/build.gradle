@@ -13,6 +13,7 @@ group "@grails.app.group@"
 @buildPlugins@
 
 repositories {
+    mavenCentral()
 @repositories@
 }
 
