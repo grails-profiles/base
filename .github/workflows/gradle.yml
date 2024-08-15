@@ -2,18 +2,18 @@ name: Java CI
 on:
   push:
     branches:
-      - '[1-9]+.[0-9]+.x'
+      - 4.0.x
       - master
   pull_request:
     branches:
-      - '[1-9]+.[0-9]+.x'
+      - 4.0.x
       - master
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: ['11']
+        java: ['8', '11', '14']
     env:
       WORKSPACE: ${{ github.workspace }}
       GRADLE_OPTS: -Xmx1500m -Dfile.encoding=UTF-8
@@ -33,7 +33,7 @@ jobs:
         if: success()
         run: ./gradlew build
       - name: Publish to repo.grails.org
-        if: success() && github.event_name == 'push' && matrix.java == '11'
+        if: success() && github.event_name == 'push' && matrix.java == '8'
         env:
           ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
           ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
