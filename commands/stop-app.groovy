@@ -2,6 +2,7 @@ import javax.management.remote.JMXServiceURL
 import javax.management.remote.JMXConnectorFactory
 import javax.management.ObjectName
 import org.grails.io.support.*
+import groovy.jmx.GroovyMBean
 
 description("Stops the running Grails application") {
     usage "grails stop-app"
